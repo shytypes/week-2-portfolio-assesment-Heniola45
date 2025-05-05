@@ -159,6 +159,12 @@ ul li a {
   padding: 2px 12px;
 }
 
+button a {
+  text-decoration: none;
+  color: #1E1B26;
+
+}
+
 .homepage-details{
   width: 100%;
   height: auto;
@@ -283,4 +289,174 @@ h2{
   border: 1px dashed #C2A5FF;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 40rem;
+  }
+  
+  .navbar-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0;
+    justify-content: center;
+  }
+
+  .picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+
+  .navbar-container ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  ul :hover{
+    list-style: none;
+    color: #a381e0;
+    border-bottom: 1.2px solid #a381e0;
+    border-radius: 1rem;
+  }
+
+  .details-container {
+    margin-left: 0;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .homepage-details {
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+  }
+
+  .projects-btn,
+  .cv-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .main-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 45rem;
+  }
+  
+  .navbar-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    max-width: 450px;
+  
+  }
+
+  .profile-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0;
+    justify-content: center;
+  }
+
+  .picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+
+  .navbar-container ul {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  ul :hover{
+    list-style: none;
+    color: #a381e0;
+    border-bottom: 1.2px solid #a381e0;
+    border-radius: 1rem;
+  }
+
+  .details-container {
+    margin-left: 0;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .homepage-details {
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+  }
+
+  .projects-btn,
+  .cv-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .contact{
+    font-size: 0.5rem;
+    padding: 0.4rem;
+  }
 }
