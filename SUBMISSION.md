@@ -3,6 +3,6 @@
 Please fill-in your student details in front of the appropriate labels
 below to ensure proper grading of assessment.
 
-- **Registered Name:**
+- **Registered Name:** Hauwa Eniola Abdulazeez
 - **Student ID:**
-- **Registered email:**
+- **Registered email:** abdulazeezhauwa1997@gmail.com

@@ -164,7 +164,7 @@ ul li a {
   height: auto;
   padding-left: 2rem;
   padding-right: 4rem;
-  padding-top: 28rem;
+  padding-top: 30rem;
 }
 
 h1{
@@ -229,13 +229,14 @@ h2{
 }
 
 .form-section {
-  color: white;
+  color: #fafafa;
   padding-top: 4rem;
 }
 
+
 .send{
   font-size: 1rem;
-  color: white;
+  color: #fafafa;
   font-weight: 100;
   width: 100%;
   line-height: 2rem;
@@ -253,6 +254,7 @@ h2{
   flex: 1;
   display: flex;
   flex-direction: column;
+
 }
 
 .input-group label {
@@ -263,9 +265,9 @@ h2{
 .input-group textarea {
   padding: 0.75rem;
   border-radius: 6px;
-  border: 1px solid #c8a2ff; 
+  border: 1px solid #313132; 
   background-color: transparent;
-  color: white;
+  color: #fafafa;
   font-family: 'JetBrains Mono', monospace;
 }
 .message{

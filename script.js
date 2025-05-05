@@ -1,9 +1,10 @@
-  const form = document.getElementById("contactForm");
-  const displayBox = document.getElementById("formDataDisplay");
+const form = document.getElementById("contactForm");
+const displayBox = document.getElementById("formDataDisplay");
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-
+      
+      
     // Collect form data
     const firstName = document.getElementById("firstName").value;
     const secondName = document.getElementById("secondName").value;
