@@ -2,9 +2,461 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 /*title text style*/
 /* the font-family 'JetBrains Mono', has been linked
  * and is available for your use
  * */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1E1B26;
+  height: 100vh;
+}
+
+#portfolio-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(45, 45, 45, 0.1);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  padding: 2rem;
+  width: 320px;
+  height: 100vh;
+  box-shadow: 0 4px 20px rgba(32, 32, 32, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 0px 48px 0px;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.profile-container:hover {
+  transform: rotateX(5deg);
+}
+
+.picture {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 32px;
+  
+}
+
+.social-links {
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  text-decoration-line: none;
+}
+
+.social-links a:hover {
+  color: #C2A5FF;
+}
+
+.contact {
+  background-color: #C2A5FF;
+  color: #1E1B26;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact:hover {
+  background-color: #a381e0;
+}
+
+.para{
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.details-container {
+  margin-left: 320px;
+  padding: 120px 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 320px;
+  right: 0;
+  background: rgba(45, 45, 45, 0.1);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+ul :hover{
+  list-style: none;
+  color: #a381e0;
+  border-bottom: 1.2px solid #a381e0;
+  border-radius: 1rem;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 2px 12px;
+}
+
+button a {
+  text-decoration: none;
+  color: #1E1B26;
+
+}
+
+.homepage-details{
+  width: 100%;
+  height: auto;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  padding-top: 30rem;
+}
+
+h1{
+  font-size: 2rem;
+  color: #a381e0;
+}
+
+h2{
+  font-size: 2rem;
+  color: #a381e0;
+  text-align: center;
+ 
+}
+
+.bio{
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+  width: 100%;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.buttons{
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+}
+
+.projects-btn{
+  background-color:  #C2A5FF;
+  color: #1E1B26;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.projects-btn:hover {
+  background-color: #a381e0;
+}
+
+.cv-btn{
+  border: 2px solid  #C2A5FF;
+  color:  #C2A5FF;
+  background-color: #1E1B26;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.cv-btn:hover {
+  background-color: #a381e0;
+  color: #1E1B26;
+  border: none;
+}
+
+.form-section {
+  color: #fafafa;
+  padding-top: 4rem;
+}
+
+
+.send{
+  font-size: 1rem;
+  color: #fafafa;
+  font-weight: 100;
+  width: 100%;
+  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.name-fields {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #313132; 
+  background-color: transparent;
+  color: #fafafa;
+  font-family: 'JetBrains Mono', monospace;
+}
+.message{
+  padding-top: 1rem;
+}
+#message{
+  margin-bottom: 1rem;
+}
+
+.display-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px dashed #C2A5FF;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 40rem;
+  }
+  
+  .navbar-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0;
+    justify-content: center;
+  }
+
+  .picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+
+  .navbar-container ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  ul :hover{
+    list-style: none;
+    color: #a381e0;
+    border-bottom: 1.2px solid #a381e0;
+    border-radius: 1rem;
+  }
+
+  .details-container {
+    margin-left: 0;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .homepage-details {
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+  }
+
+  .projects-btn,
+  .cv-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .main-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 45rem;
+  }
+  
+  .navbar-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    max-width: 450px;
+  
+  }
+
+  .profile-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0;
+    justify-content: center;
+  }
+
+  .picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+
+  .navbar-container ul {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  ul :hover{
+    list-style: none;
+    color: #a381e0;
+    border-bottom: 1.2px solid #a381e0;
+    border-radius: 1rem;
+  }
+
+  .details-container {
+    margin-left: 0;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .homepage-details {
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+  }
+
+  .projects-btn,
+  .cv-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .contact{
+    font-size: 0.5rem;
+    padding: 0.4rem;
+  }
+}
